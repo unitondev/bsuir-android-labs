@@ -12,6 +12,8 @@ target 'playground' do
     :hermes_enabled => false
   )
 
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
   target 'playgroundTests' do
     inherit! :complete
     # Pods for testing
