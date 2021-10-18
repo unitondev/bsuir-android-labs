@@ -18,7 +18,7 @@ const Lab3 = () => {
     }
 
     const screen = (
-        <>
+        <View style={styles.buttonsContainer}>
             <Button
                 onPress={() => {
                     setBackgroundColor('green')
@@ -66,7 +66,7 @@ const Lab3 = () => {
                 title = 'developer'
                 color='#007AFF'
             />
-        </>
+        </View>
     )
     return (
         <View style={{ ...styles.screen, ...additionalStyle }}>
@@ -89,6 +89,13 @@ const styles = StyleSheet.create({
     image: {
         flex: 1,
         justifyContent: 'center'
+    },
+    buttonsContainer: {
+        height: '50%',
+        width: '100%',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        alignItems: 'center'
     }
 })
 
