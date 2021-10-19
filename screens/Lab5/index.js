@@ -18,7 +18,7 @@ const Lab5 = () => {
 
     return (
         <View style={styles.screen}>
-            <Button onPress={onGalleryOpen} title='Open photo' />
+            <Button onPress={onGalleryOpen} title='Open photo' color='#007AFF' />
             {imageUri ?
                 <Image
                     style={styles.image}

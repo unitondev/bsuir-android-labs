@@ -86,10 +86,10 @@ const Lab4 = () => {
             </View>
             <View style={styles.rowContainer}>
                 <View style={styles.button}>
-                    <Button onPress={fadeIn} title='Show' />
+                    <Button onPress={fadeIn} title='Show' color='#007AFF' />
                 </View>
                 <View style={styles.button}>
-                    <Button onPress={fadeOut} title='Hide'/>
+                    <Button onPress={fadeOut} title='Hide' color='#007AFF' />
                 </View>
             </View>
             <View style={styles.rowContainer}>
