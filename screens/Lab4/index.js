@@ -1,7 +1,7 @@
-import React, { useRef, useEffect, useState } from "react"
+import React, { useRef, useEffect, useState } from 'react'
 import { View, Text, StyleSheet, Animated, TextInput, Button } from 'react-native'
 
-const SyncBeatingCircle = props => {
+const SyncBeatingCircle = ({ style }) => {
     const fadeAnimation = useRef(new Animated.Value(0)).current
 
     useEffect(() => {
@@ -34,13 +34,13 @@ const SyncBeatingCircle = props => {
 
     return (
         <Animated.View
-            style={{ ...props.style, opacity: fadeAnimation }}
+            style={{ ...style, opacity: fadeAnimation }}
         >
         </Animated.View>
     )
 }
 
-const Lab4 = props => {
+const Lab4 = () => {
 
     // async animation //
     const fadeAnimation = useRef(new Animated.Value(0)).current
@@ -86,10 +86,10 @@ const Lab4 = props => {
             </View>
             <View style={styles.rowContainer}>
                 <View style={styles.button}>
-                    <Button onPress={fadeIn} title='show' />
+                    <Button onPress={fadeIn} title='Show' />
                 </View>
                 <View style={styles.button}>
-                    <Button onPress={fadeOut} title='hide'/>
+                    <Button onPress={fadeOut} title='Hide'/>
                 </View>
             </View>
             <View style={styles.rowContainer}>
