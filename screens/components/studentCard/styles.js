@@ -11,7 +11,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         marginHorizontal: 6,
         marginVertical: 12,
-        padding: 10
+        padding: 10,
+        color: 'black'
     },
     submitButton: {
         marginVertical: 12,

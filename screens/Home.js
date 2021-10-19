@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native'
 
 const Home = () => (
     <View style={ styles.main }>
-        <Text> hello world! </Text>
+        <Text style={ styles.text }> hello world! </Text>
     </View>
 )
 
@@ -14,6 +14,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    text: {
+        color: 'black'
+    }
 })
 
 export default Home

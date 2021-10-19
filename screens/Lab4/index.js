@@ -74,11 +74,11 @@ const Lab4 = () => {
     return (
         <View style={styles.screen}>
             <View style={styles.rowContainer}>
-                <Text>Sync animation working</Text>
+                <Text style={ styles.text }>Sync animation working</Text>
                 <SyncBeatingCircle style={styles.redCircle}></SyncBeatingCircle>
             </View>
             <View style={styles.rowContainer}>
-                <Text>Async animation:</Text>
+                <Text style={ styles.text }>Async animation:</Text>
                 <Animated.View
                     style={{ ...styles.redCircle, opacity: fadeAnimation }}
                 >
@@ -93,7 +93,7 @@ const Lab4 = () => {
                 </View>
             </View>
             <View style={styles.rowContainer}>
-                <Text>Enter delay: </Text>
+                <Text style={ styles.text }>Enter delay: </Text>
                 <TextInput
                     value={animationDuration}
                     onChangeText={setAnimationDuration}
@@ -125,9 +125,13 @@ const styles = StyleSheet.create({
     },
     input: {
         width: '50%',
+        color: '#9c9c9c'
     },
     button: {
         marginHorizontal: 10
+    },
+    text: {
+        color: 'black'
     }
 })
 

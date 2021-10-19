@@ -41,6 +41,7 @@ const Index = ({
                     blurOnSubmit={false}
                     onSubmitEditing={() => { ref_lastNameInput.current.focus() }}
                     style={styles.input}
+                    placeholderTextColor='#9c9c9c'
                 />
                 { errors.firstName && touched.firstName &&
                     <Text style={styles.errorMessage}>{errors.firstName}</Text>
@@ -54,6 +55,7 @@ const Index = ({
                     ref={ref_lastNameInput}
                     onSubmitEditing={() => { ref_middleNameInput.current.focus() }}
                     style={styles.input}
+                    placeholderTextColor='#9c9c9c'
                 />
                 { errors.lastName && touched.lastName &&
                     <Text style={styles.errorMessage}>{errors.lastName}</Text>
@@ -67,6 +69,7 @@ const Index = ({
                     ref={ref_middleNameInput}
                     onSubmitEditing={() => { ref_groupNumberInput.current.focus() }}
                     style={styles.input}
+                    placeholderTextColor='#9c9c9c'
                 />
                 { errors.middleName && touched.middleName &&
                     <Text style={styles.errorMessage}>{errors.middleName}</Text>
@@ -81,6 +84,7 @@ const Index = ({
                     onSubmitEditing={() => { ref_facilityInput.current.focus() }}
                     keyboardType='number-pad'
                     style={styles.input}
+                    placeholderTextColor='#9c9c9c'
                 />
                 { errors.groupNumber && touched.groupNumber &&
                     <Text style={styles.errorMessage}>{errors.groupNumber}</Text>
@@ -93,6 +97,7 @@ const Index = ({
                     blurOnSubmit={true}
                     ref={ref_facilityInput}
                     style={styles.input}
+                    placeholderTextColor='#9c9c9c'
                 />
                 { errors.faculty && touched.faculty &&
                     <Text style={styles.errorMessage}>{errors.faculty}</Text>
