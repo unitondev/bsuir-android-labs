@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".DroidActivity2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
