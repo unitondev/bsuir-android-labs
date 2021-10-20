@@ -9,6 +9,7 @@ import Lab4 from './screens/Lab4'
 import Lab5 from './screens/Lab5'
 import Lab6 from './screens/Lab6'
 import Lab7 from './screens/Lab7'
+import Lab8 from './screens/Lab8'
 
 const Drawer = createDrawerNavigator()
 
@@ -22,6 +23,7 @@ const App = () => (
       <Drawer.Screen name='Lab5' component={ Lab5 } />
       <Drawer.Screen name='Lab6' component={ Lab6 } />
       <Drawer.Screen name='Lab7' component={ Lab7 } />
+      <Drawer.Screen name='Lab8' component={ Lab8 } />
     </Drawer.Navigator>
   </NavigationContainer> 
 )
