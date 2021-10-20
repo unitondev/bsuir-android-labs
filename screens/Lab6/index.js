@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, TextInput, FlatList, Button } from 'react-native'
 
-import { writeToStorage } from './writeToStorage'
-import { readFromStorage } from './readFromStorage'
-import { deleteFromStorage } from './deleteFromStorage'
+import { writeToStorage } from '../helper/writeToStorage'
+import { readFromStorage } from '../helper/readFromStorage'
+import { deleteFromStorage } from '../helper/deleteFromStorage'
 
 const Lab6 = () => {
     const studentsKey = 'students'
